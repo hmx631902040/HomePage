@@ -1,0 +1,35 @@
+{
+  "name": "tab",
+  "version": "1.0.0",
+  "main": "label.js",
+  "dependencies": {
+    "http-server": "^0.8.5",
+    "iscroll": "^5.2.0",
+    "jquery": "^2.1.4",
+    "jsxhint": "^0.15.1",
+    "less": "^1.5.1",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.29",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.9.0",
+    "jsx-loader": "^0.12.2",
+    "less-loader": "^0.7.7",
+    "postcss-loader": "^1.1.1",
+    "reactify": "^0.15.2",
+    "style-loader": "^0.8.1",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.5.3"
+  },
+  "scripts": {
+    "start": "npm run webpack & npm run serve",
+    "start-win": "start npm run webpack && start npm run serve",
+    "webpack": "webpack --progress --colors --watch",
+    "serve": "http-server -p 8230"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
