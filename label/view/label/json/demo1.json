@@ -1,0 +1,103 @@
+{
+   "dgzq" : [
+      {
+         "title" : "融汇财经:  关注炼油注炼油注炼油注炼油行业机遇",
+         "titleLabel" : "东莞证券",
+         "time" : "2008-04-10",
+         "img" : "../../../img/default1.png",
+         "img2" : "../../../img/default2.png",
+         "img3" : "../../../img/default3.png",
+         "imgs" : [
+            {
+               "img" : "../../../img/default2.png"
+            },
+            {
+               "img" : "../../../img/default2.png"
+            },
+            {
+               "img" : "../../../img/default2.png"
+            }
+         ],
+         "source" :[
+
+            {
+               "src" : "https://www.baidu.com/"
+            },
+            {
+               "src" : "http://fanyi.baidu.com/?aldtype=16047#zh/en/"
+            },
+            {
+               "src" : "http://www.ruanyifeng.com/blog/2016/05/react_router.html?utm_source=tool.lu"
+            }
+
+         ]
+      },
+      {
+         "title" : "金慧财经:  关注炼油行业机遇",
+         "titleLabel" :  "",
+         "time" : "2010-05-15",
+         "img" : "../../../img/default1.png",
+         "img2" : "../../../img/default2.png",
+         "img3" : "../../../img/default3.png",
+         "imgs" : [
+            {
+               "img" : "../../../img/default2.png"
+            },
+            {
+               "img" : "../../../img/default2.png"
+            },
+            {
+               "img" : "../../../img/default2.png"
+            }
+         ],
+         "source" :[
+
+            {
+               "src" : "https://www.baidu.com/"
+            },
+            {
+               "src" : "http://fanyi.baidu.com/?aldtype=16047#zh/en/"
+            },
+            {
+               "src" : "http://www.ruanyifeng.com/blog/2016/05/react_router.html?utm_source=tool.lu"
+            }
+
+         ]
+
+      },
+     {
+         "title" : "百汇财经:  关注炼油行业机遇",
+         "titleLabel" :  "上海证券",
+         "time" : "2010-05-15",
+         "img" : "../../../img/default1.png",
+         "img2" : "../../../img/default2.png",
+         "img3" : "../../../img/default3.png",
+         "imgs" : [
+            {
+               "img" : "../../../img/default2.png"
+            },
+            {
+               "img" : "../../../img/default2.png"
+            },
+            {
+               "img" : "../../../img/default2.png"
+            }
+         ],
+         "source" :[
+
+            {
+               "src" : "https://www.baidu.com/"
+            },
+            {
+               "src" : "http://fanyi.baidu.com/?aldtype=16047#zh/en/"
+            },
+            {
+               "src" : "http://www.ruanyifeng.com/blog/2016/05/react_router.html?utm_source=tool.lu"
+            }
+
+         ]
+
+      }
+
+   ]
+}

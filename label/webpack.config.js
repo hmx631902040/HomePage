@@ -8,7 +8,7 @@ module.exports = {
     plugins: [commonsPlugin],
     entry: {
         "label" : "./view/label/label.jsx",
-
+        "tgxq" : "./view/label/detail/detail.jsx",
     },
     output: {
         path: './dist/scripts',

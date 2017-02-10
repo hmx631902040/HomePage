@@ -1,0 +1,747 @@
+body{
+	margin: 0px;
+	background-color: #f7f7f7;
+	font-family: "Helvetica";
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+.clear{
+	clear: both;
+}
+
+.line{
+	height:1px;
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, white, #dadada);
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(,  [, ]?,  [, ]? [, ]*) */
+    background: -webkit-gradient(linear,top,from(white),to(#dadada));
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(top, white, #dadada);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, white, #dadada);
+    -webkit-background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.header-line{
+	width: 100%;
+	height: 1px;
+	background: #c1c1c1;
+}
+
+.groupview{
+	margin-top: 0.5rem;
+}
+
+.titleheader {
+	color: rgb(102,102,102);
+	line-height: 36px;
+	text-indent: 10px;
+	font-size: 14px;
+	background: white;
+}
+	.titleheader .recordtime{
+		color: rgb(153,153,153);
+	}
+
+	.titleheader .rightmore{
+		display: block;
+		background: url(../img/icon_rightmore.svg) no-repeat 6px center;
+	    background-size: 16px 16px;
+	    float: right;
+	    width: 33px;
+	    height: 20px;
+	    margin-top: 8px;
+	}
+
+.legendcircle{
+    width:12px;
+    height:12px;
+    background-color:rgb(255,61,0);
+    border-radius:9px;
+}
+
+.legendcircle[data-color=blue]{
+    background-color:#2577ff;
+}
+
+.valuebar{
+	width: 100px;
+	height: 10px;
+	background-color:rgba(37, 119, 255, 0.47);
+	border-radius:0px 6px 6px 0px;
+	opacity: 0.5;
+	max-width: 100%;
+}
+
+.ar{text-align: right;}
+.ac{text-align: center;}
+.al{text-align: left;}
+
+/*************BODY******************/
+
+.colormark{
+	height: 53vw;
+}
+
+.nocolormark{
+}
+
+.header{
+	background-color: white;
+}
+	.header .attention{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+		.header .attention img{
+			height: 1.2rem;
+		}
+		.header .attention div{
+			line-height: 1.2rem;
+			font-size: 14px;
+			float: right;
+			color: #dbf7e0;
+		}
+
+	.header .sumprofit{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+		.header .sumprofit .label{
+			color: #d9ffe0;
+			margin: 0;
+			font-size: 14px;
+		}
+		.header .sumprofit .value{
+			color: white;
+			font-size: 53px;
+			margin: 0 0 0.20rem 0;
+		}
+		.header .sumprofit .percent{
+			font-size: 16px;
+		}
+
+	.header .time-rank{
+		margin-top: 0.6rem;
+		font-size: 14px;
+		color: #d9ffe0;
+		text-align: center;
+	}
+		.header .time-rank table{
+			margin-left: 20px;
+			border:0;
+		}
+		.header .time-rank th{
+			font-weight: normal;
+			padding:0 0 0.28rem 0;
+			min-width: 3.2rem;
+		}
+		.header .time-rank .value{
+			vertical-align: initial;
+			color: white;
+			padding: 0 0.12rem;
+		}
+		.header .time-rank .toleft{
+			padding-left: 1rem;
+		}
+		.header .time-rank .toright{
+			padding-right: 0.75rem;
+		}
+		.header .time-rank .line{
+			min-width: 1px;
+			width: 1px;
+			background: #c1c1c1;
+			padding: 0;
+		}
+
+	.header .stockgod{
+		margin: -6px 10px 0px 8px;
+		font-size: 13px;
+		color: #555555;
+	}
+
+		.header .stockgod table{
+			width: 100%;
+		}
+
+		.header .stockgod .middletd{
+
+		}
+
+		.header .stockgod .person{
+			padding-left: 6px;
+			padding-right: 3px;
+		}
+			.header .stockgod .pic img{
+				height: 28px;
+				margin-right: 3px;
+				border-radius: 50px;
+			}
+			.header .stockgod .person .info{
+			}
+				.header .stockgod .person .info .name{
+					font-size: 13px;
+					margin: 7px 0 7px 0;
+				}
+
+				.header .stockgod .person .info .name div{
+					float:left;
+					margin-right: 3px;
+					line-height: 13px;
+				}
+
+				.header .stockgod .person .info .intro{
+					margin-top: 0px;
+					margin-bottom: 8px;
+					line-height: 18px;
+					font-size: 13px;
+					font-family: "PingFangSC-Medium";
+				}
+				.header .stockgod .person .info img{
+					height: 13px;
+				}
+		.header .stockgod .pictd{
+			width: 31px;
+		}
+		.header .stockgod .timetd{
+			width: 89px;
+		}
+		.header .stockgod .time{
+			border-left: 1px solid #efefef;
+			margin-top: 1rem;
+			margin-left: 6px;
+			text-align: right;
+			font-size: 13px;
+			font-family: "PingFangSC-Regular";
+		}
+			.header .stockgod .time .update{
+				margin-top: 2px;
+				margin-bottom: 8px;
+			}
+
+			.header .stockgod .time .update span{
+				color:#fc571f;
+			}
+
+.storerecord{
+	background-color: white;
+	font-family: "PingFangSC-Regular";
+}
+	.storerecord .items:last-child{
+
+	}
+
+		.storerecord .storeitem{
+			font-size: 15px;
+			background-color: white;
+		}
+		.storerecord .storeitem[last=last]{
+			border-bottom: 0px solid #f1f1f1;
+		}
+			.imgBuyOrSell{
+				margin-top: 10px;
+				float: left;
+			    width: 38px;
+			    height: 20px;
+			}
+
+			.storerecord .storeitem .stockinfo{
+				padding-bottom: 3px;
+				float: left;
+				width: 30%;
+			}
+				.storerecord .storeitem .stockinfo .stockname{
+					line-height: 22px;
+					margin-top: 4px;
+					color:rgb(51,51,51);
+				}
+				.storerecord .storeitem .stockinfo .stockcode{
+					color:rgb(153,153,153);
+					font-size: 13px;
+				}
+			.storerecord .storeitem .stockdetail{
+				padding-bottom: 3px;
+				float: right;
+				margin-right: 10px;
+				vertical-align: middle;
+				text-align: right;
+				color:rgb(27,27,27);
+			}
+				.storerecord .storeitem .stockdetail .priceIndi{
+					color:rgb(153,153,153);
+					font-size: 13px;
+					margin-top: 2px;
+				}
+				.indiStatus{
+					font-family: "PingFangSC-Regular";
+					color: #FF9F00;
+					font-size: 11px;
+					margin-right: 30px;
+					margin-top: 6px;
+				}
+				.storerecord .storeitem .stockdetail img{
+					height: 13px;
+					margin:3px 3px 0px 3px;
+				}
+			.storerecord .storeitem[data-value=buy] .imgBuyOrSell{
+				background: url(../img/store_buy.svg) no-repeat 10px center;
+				background-size: 16px 16px;
+			}
+
+			.storerecord .storeitem[data-value=sell] .imgBuyOrSell{
+				background: url(../img/store_sell.svg) no-repeat 10px center;
+				background-size: 16px 16px;
+			}
+
+.groupconfig{
+	background-color: white;
+	font-size: 13px;
+}
+	.groupconfig .chartarea{
+		margin: 16px 0px 10px 10px;
+		height: 168px;
+	}
+	.groupconfig .legendarea{
+		margin: 0 10px 10px 10px;
+	}
+
+	.groupconfig .legendarea td{
+		padding: 3px 0;
+	}
+
+	.groupconfig .group-legend{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.groupconfig .wait-deal{
+		font-family: "PingFangSC-Medium";
+		font-size: 13px;
+		color: #ffab00;
+		position: absolute;
+	    left: 10px;
+	    margin-top: 10px;
+	    display: none;
+	}
+
+.profittrend{
+	background-color: white;
+	border-bottom: 0px;
+}
+
+	.profittrend .time-ul{
+		list-style: none;
+		padding: 0;
+		margin: 10px 6px;
+		font-size: 13px;
+	}
+	.profittrend .chartArea{
+		margin-right: 10px;
+	}
+	.profittrend .tip{
+		font-family: "PingFangSC-Regular";
+		color:#899198;
+		font-size: 12px;
+		line-height: 18px;
+		text-align: center;
+		background-color: #f9fafe;
+		padding: 0 16px;
+	}
+	.profittrend .tip table{
+		margin:0 auto;
+	}
+
+	.profittrend .tip-img{
+		width:30px;
+	}
+
+	.profittrend .tip img{
+		padding:0px 0px 0 0px;
+		vertical-align: sub;
+	}
+
+	.profittrend .tip-msg{
+	    text-align: center;
+	    padding: 6px 0px 0 0px;
+	    line-height: 20px;
+	}
+
+		.profittrend .tip-msg span{
+
+		}
+
+	.profittrend .tip-declare{
+		padding-bottom: 6px;
+	}
+
+		.profittrend .time-ul li{
+			float: left;
+			line-height: 25px;
+			width: 50px;
+			border: 1px solid #e4e4e4;
+			text-align: center;
+			font-family: "PingFangSC-Regular";
+			color:rgb(74,82,91);
+		}
+
+		.profittrend .time-ul .active{
+			background: #fc571f;
+			color: white;
+		}
+
+		.profittrend .time-ul li:nth-child(even){
+			border-left: 0px solid #e4e4e4;
+			border-right: 0px solid #e4e4e4;
+		}
+
+		.profittrend .group-legend{
+			font-size: 12px;
+			float: right;
+			vertical-align: middle;
+			line-height: 20px;
+			margin-right: 10px;
+			color:#555;
+		}
+
+			.profittrend .group-legend .margin-left{
+				margin-left: 6px;
+			}
+
+.detail-opinion{
+	height:40px;
+	background:white;
+	text-align: center;
+	color: #676766;
+}
+
+	.detail-opinion .detail-opinion-good{
+		float:left;
+		width:49.8%;
+		height:100%;
+		background: url(../img/detail_good_normal.svg) no-repeat 35% center #F2F4F8;
+		background-size: 16px 16px;
+	}
+
+	.detail-opinion .detail-opinion-bad{
+		float:right;
+		width:49.8%;
+		height:100%;
+		background: url(../img/detail_bad_normal.svg) no-repeat 65% center #F2F4F8;
+		background-size: 16px 16px;
+	}
+
+	.detail-opinion-good[data-value=highlight]{
+		background: url(../img/detail_good.svg) no-repeat 35% center #F2F4F8;
+		background-size: 16px 16px;
+		color: #FF4108;
+	}
+
+	.detail-opinion-bad[data-value=highlight]{
+		background: url(../img/detail_bad.svg) no-repeat 65% center #F2F4F8;
+		background-size: 16px 16px;
+		color: #FF4108;
+	}
+
+	.detail-opinion #goodNumber{
+		text-indent: 15%;
+	}
+
+	.detail-opinion #badNumber{
+		text-indent: -15%;
+	}
+
+	.detail-opinion #goodNumber, .detail-opinion #badNumber{
+		line-height: 40px;
+	}
+
+.relative-infos{
+	background:white;
+}
+	.relative-infos .info-header{
+		text-align: center;
+		font-size: 16px;
+		padding:10px;
+		color:#555;
+	}
+
+	.relative-infos .info-items{
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+	}
+
+	.relative-infos .infoitem{
+		height:60px;
+		vertical-align: middle;
+		border-bottom: 1px solid #e4e4e4;
+		border-top: 1px solid #e4e4e4;
+	}
+
+	.relative-infos .infoitem-text{
+		font-size: 15px;
+		padding-right: 10px;
+		line-height: 20px;
+		width:auto;
+		color: #333333;
+		font-family: "PingFangSC-Regular"
+	}
+
+	.relative-infos .infoitem-time{
+		width: 60px;
+		color: #A1A8AD;
+		font-size: 13px;
+		max-width: 100px;
+		text-align: right;
+		font-family: "PingFangSC-Regular"
+	}
+
+	.relative-infos .showmore{
+		font-family: "PingFangSC-Regular";
+		color:#899198;
+		text-align: center;
+		font-size: 16px;
+		padding: 14px 10px;
+	}
+
+.warning-tip{
+	position: fixed;
+	top:2px;
+	left: 0;
+	right: 0;
+	height: 45px;
+	font-family: "PingFangSC-Medium";
+	background-color: white;
+	font-size: 13px;
+	color: #ffab00;
+	line-height: 16px;
+	display: none;
+}
+.warning-tip table{width: 100%;}
+.warning-left{
+	padding-left: 10px;
+	height: 32px;
+	vertical-align: center;
+}
+
+.warning-right{
+	width: 30px;
+	height: 38px;
+	vertical-align: center;
+}
+
+.warning-right button{
+	background: url(../img/icon_delete.svg) no-repeat 6px center;
+	background-size: 50% 50%;
+	border-width: 0px;
+	outline: none;
+}
+
+#doughnutChart, #lineChart{
+	height: 200px;
+	width: 100%;
+	display:none;
+}
+
+.hideChartDiv{
+	background: red;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    margin: -200px 0 0 0;
+    opacity: 0;
+    display:none;
+}
+
+#doughnutChart{
+	padding-top: 10px;
+}
+
+#groupLegend{
+	display:none;
+}
+
+.header[data-color=zhang]{
+	background-size:100% auto;
+	-moz-background-size:100% auto;
+	background-image: url(../img/bg_red.png);
+	background-repeat:no-repeat;
+}
+
+.header[data-color=die]{
+	background-size:100% auto;
+	-moz-background-size:100% auto;
+	background-image: url(../img/bg_green.png);
+	background-repeat:no-repeat;
+}
+
+.header[data-color=ping]{
+	background-size:100% auto;
+	-moz-background-size:100% auto;
+	background-image: url(../img/bg_gray.png);
+	background-repeat:no-repeat;
+}
+
+.header[data-color=zhang] .header-line{
+	background: #ff5f2f;
+}
+.header[data-color=zhang] .time-rank .line{
+	background: #ff5f2f;
+}
+.header[data-color=zhang] .sumprofit .label{
+	color: #EFB793;
+}
+.header[data-color=zhang] .time-rank{
+	color: #FFAB7F;
+}
+.header[data-color=zhang] .attention div{
+	color:#FFC5B3;
+}
+
+.header[data-color=die] .header-line{
+	background-color: #5ace6f;
+}
+.header[data-color=die] .time-rank .line {
+	background-color: #5ace6f;
+}
+.header[data-color=die] .sumprofit .label{
+	color: #C1FFCC;
+}
+.header[data-color=die] .time-rank{
+	color: #C1FFCC;
+}
+.header[data-color=die] .attention div{
+	color:#E0FFE6;
+}
+
+.header[data-color=ping] .header-line{
+	background-color: #c1c1c1;
+}
+.header[data-color=ping] .time-rank .line {
+	background-color: #c1c1c1;
+}
+.header[data-color=ping] .sumprofit .label{
+	color: #EFEFEF;
+}
+.header[data-color=ping] .time-rank{
+	color: #F1F1F1;
+}
+.header[data-color=ping] .attention div{
+	color:#E8E8E8;
+}
+ /*app-download下载*/
+#appdownload{
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:67px;
+	width:100%;
+}
+#appdownload div.bg-appdownload{
+	background: url('../img/bg-download.png');
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height:67px;
+	width:100%;
+	opacity:0.9;
+}
+img#appdownload-close{
+	position:absolute;
+	top:0;
+	right:0;
+	height:20px;
+	width:20px;
+
+}
+dl dt.appdownload-logo img{
+	position: absolute;
+	left: 18px;
+	top: 11px;
+	height: 45px;
+	width: 45px;
+}
+dl dd div.appdownload-title{
+	position: absolute;
+	left: 80px;
+	top: 15px;
+	font-size:18px;
+	font-family:'PingFangSC-Regular';
+	color:#fff;
+}
+dl dd div.appdownload-content{
+	position: absolute;
+	left: 80px;
+	top: 42px;
+	font-size:12px;
+	font-family:'PingFangSC-Regular';
+	color:#eee;
+}
+#appdownload button#Immediately-use{
+	position: absolute;
+	right: 27px;
+	top: 15px;
+	border-radius: 3px;
+	width: 120px;
+	height:37px;
+	background: #ff3d00;
+	font-size:15px;
+	font-family:'PingFangSC-Medium';
+	color:#fff;
+	border:none;
+}
+
+/*媒体查询,进行适配*/
+@media only screen and (max-width: 414px) {
+	html{
+		font-size: 20px;
+	}
+	.header .sumprofit .value{
+		font-size: 62px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	html{
+		font-size: 16px;
+	}
+	.header .sumprofit .value{
+		font-size: 53px;
+	}
+
+}
+
+@media only screen and (max-width: 343px) {
+	html{
+		font-size: 13px;
+	}
+	.header .sumprofit .value{
+		font-size: 53px;
+	}
+	dl dt.appdownload-logo img{
+		left: 13px;
+		top: 11px;
+	}
+	dl dd div.appdownload-title{
+		left: 65px;
+	}
+	dl dd div.appdownload-content{
+		left: 65px;
+	}
+	#appdownload button#Immediately-use{
+	right: 20px;
+	width: 100px;
+	height:37px;
+	}
+}

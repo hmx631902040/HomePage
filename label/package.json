@@ -5,9 +5,10 @@
   "dependencies": {
     "http-server": "^0.8.5",
     "iscroll": "^5.2.0",
-    "jquery": "^2.1.4",
+    "jquery": "^2.2.4",
     "jsxhint": "^0.15.1",
     "less": "^1.5.1",
+    "echarts": "^3.3.2",
     "react": "^0.14.0",
     "react-dom": "^0.14.0"
   },
